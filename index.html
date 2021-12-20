@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Expression Validation</title>
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+        <h1 style="margin: 3rem;">Expression Validation App</h1>
+        <form>
+            <h4>( Please fill all the fields properly and then tap submit )</h4>
+            
+            <div class="form-group row" style="margin: 4rem;">
+                <label for="inputEmail" class="col-sm-2 col-form-label"><strong>Email :</strong></label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputEmail" placeholder="Input in a format: 'someone@something.com/org/edu'" required>
+                </div>
+            </div>
+            
+            <div class="form-group row" style="margin: 4rem;">
+                <label for="inputPostCode" class="col-sm-2 col-form-label"><strong>Post Code :</strong></label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPostCode" placeholder="Input in a format: '88888-8888-XY'" required>
+                </div>
+            </div>
+            
+            <div class="form-group row" style="margin: 4rem;">
+                <label for="inputPhoneNum" class="col-sm-2 col-form-label"><strong>Phone Number :</strong></label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPhoneNum" placeholder="Input in a format: '+888-8888-888888'" required>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-secondary btn-lg" style="margin-bottom: 3rem;">Submit</button>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
