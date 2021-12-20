@@ -16,7 +16,8 @@ function warning(inputField, message, alertClass) {
     let parentElem = inputField.parentElement;
     alertBox.setAttribute('class', 'alert');
     alertBox.setAttribute('class', alertClass);
-    alertBox.innerText = message;
+    alertBox.setAttribute('style', 'padding: 1rem;')
+    alertBox.innerHTML = message;
     parentElem.appendChild(alertBox);
 
     setTimeout(() => {
@@ -50,7 +51,8 @@ function check (e) {
     }
     
     if (emailCheck && postalCheck && phoneNumCheck) {
-        window.alert('Success! All the fields were input correctly!');
+        let befChild = document.querySelector('h4');
+        warning(befChild, "<h5>Success!<br>All the fields were input correctly</h5>", 'alert-success');
     } else {
         if (!emailCheck) {
             warning(emailInput, "Please input email in the required format", 'alert-danger')
